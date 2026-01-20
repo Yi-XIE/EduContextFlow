@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EduContextFlow - Chat</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <h1>EduContextFlow 对话</h1>
+        <p>支持文本、文件与图片上传（前端演示版）</p>
+      </header>
+
+      <main class="chat">
+        <div id="messages" class="messages"></div>
+      </main>
+
+      <section class="composer">
+        <div class="uploads">
+          <label class="upload-button">
+            上传文件 / 图片
+            <input id="fileInput" type="file" multiple accept="image/*,.pdf,.txt,.md" />
+          </label>
+          <div id="fileList" class="file-list"></div>
+          <div id="imagePreview" class="image-preview"></div>
+        </div>
+
+        <div class="input-row">
+          <textarea id="textInput" placeholder="输入你的问题或需求..." rows="3"></textarea>
+          <button id="sendBtn">发送</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

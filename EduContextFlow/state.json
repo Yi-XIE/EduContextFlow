@@ -1,0 +1,47 @@
+{
+  "session_id": "52235080-d6bf-42ca-afdd-34e0faf4a056",
+  "stage": "skill_done",
+  "selected_skill": "question_chain_generation",
+  "skills": {
+    "transcript_generation": {
+      "status": "done"
+    },
+    "image_generation": {
+      "status": "done"
+    },
+    "script_from_transcript": {
+      "status": "done"
+    },
+    "question_chain_generation": {
+      "status": "done"
+    }
+  },
+  "context_index": {
+    "transcript": {
+      "ref": "outputs/transcript.md",
+      "producer": "transcript_generation",
+      "status": "ready",
+      "description": "\u6559\u5b66\u9010\u5b57\u7a3f"
+    },
+    "image": {
+      "ref": "outputs/image.png",
+      "producer": "image_generation",
+      "status": "ready",
+      "description": "\u6559\u5b66\u63d2\u56fe"
+    },
+    "script": {
+      "ref": "outputs/script.md",
+      "producer": "script_from_transcript",
+      "status": "ready",
+      "description": "\u8868\u683c\u5316\u6559\u5b66\u89c6\u9891\u811a\u672c"
+    },
+    "question_chain": {
+      "ref": "outputs/question_chain.md",
+      "producer": "question_chain_generation",
+      "status": "ready",
+      "description": "\u5f15\u5bfc\u6027\u95ee\u9898\u94fe"
+    }
+  },
+  "last_output_ref": "outputs/question_chain.md",
+  "pending_user_input": null
+}
